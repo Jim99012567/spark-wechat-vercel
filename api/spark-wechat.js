@@ -170,7 +170,7 @@ module.exports = async function (request, response) {
       FromUserName,
       ToUserName,
       timeNow,
-      '微信规定要在5s内回复，但是本次需要回复的内容很长，现在还没整理好，所以你暂时看到了这条消息。请稍后回复任意文字尝试获取回复。比如数字 1。'
+      '微信规定5秒内必须回复，但你提出的问题我正在思考中，请在5秒后回复任意内容(如数字 1)尝试获取回复'
     ));
     return;
   }
@@ -256,7 +256,7 @@ module.exports = async function (request, response) {
           FromUserName,
           ToUserName,
           timeNow,
-          '微信规定要在5s内回复，但是我正在思考中，所以你暂时看到了这条消息。请稍后回复任意文字尝试获取回复。比如数字 1。'
+          '微信规定5秒内必须回复，但你提出的问题我正在思考中，请在5秒后回复任意内容(如数字 1)尝试获取回复'
         )
       );
     }, 4000);
