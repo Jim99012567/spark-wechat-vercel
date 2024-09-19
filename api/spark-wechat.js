@@ -123,7 +123,7 @@ module.exports = async function (request, response) {
       FromUserName,
       ToUserName,
       timeNow,
-      "暂不支持语音类型消息"
+      "暂不支持语音类型消息,请打字与我交流"
     ));
     return;
   }
@@ -170,7 +170,7 @@ module.exports = async function (request, response) {
       FromUserName,
       ToUserName,
       timeNow,
-      '微信规定5秒内必须回复，但你提出的问题我正在思考中，请在5秒后回复任意内容(如数字 1)尝试获取回复'
+      '微信规定5秒内必须回复，而你提出的问题我还在思考中，请在6秒后回复任意内容(如数字 1)获取最新回复'
     ));
     return;
   }
@@ -256,7 +256,7 @@ module.exports = async function (request, response) {
           FromUserName,
           ToUserName,
           timeNow,
-          '微信规定5秒内必须回复，但你提出的问题我正在思考中，请在5秒后回复任意内容(如数字 1)尝试获取回复'
+          '微信规定5秒内必须回复，而你提出的问题我还在思考中，请在6秒后回复任意内容(如数字 2)获取最新回复'
         )
       );
     }, 4000);
